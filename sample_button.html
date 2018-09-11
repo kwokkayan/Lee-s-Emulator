@@ -2,18 +2,18 @@
 <p id='cash_count'></p>
 <script>
     var money = 0;
-	function CreateButton(name, func){
-		var button = document.createElement("button");
-		button.innerHTML = name;
-		document.body.appendChild(button)[0];
-		button.addEventListener("click", func);
-	}
-	function loop(){
-		document.getElementById('cash_count').innerHTML = "you have $" + money;
-	}
-	CreateButton("beg", function(){
-		money += 1;
-	});
-	setInterval(loop, 10);
+    function CreateButton(name, func){
+	var button = document.createElement("button");
+	button.innerHTML = name;
+	document.body.appendChild(button)[0];
+	button.addEventListener("click", func);
+    }
+    function loop(){
+	document.getElementById('cash_count').innerHTML = "you have $" + money;
+    }
+    CreateButton("beg", function(){
+	money += 1;
+    });
+    setInterval(loop, 10);
 </script>
 <body>
